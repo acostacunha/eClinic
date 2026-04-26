@@ -1,0 +1,24 @@
+@eClinic.Client.API_HostAddress = http://localhost:5016
+
+GET {{eClinic.Client.API_HostAddress}}/openapi/v1.json
+
+###
+
+### Listar Todos os Clientes
+GET {{eClinic.Client.API_HostAddress}}/api/clients
+
+### 
+
+### Criar Cliente
+POST {{eClinic.Client.API_HostAddress}}/api/client
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Bob teste",
+  "cpf": "12345678901",
+  "email": "teste@teste.com",
+  "phone": "11 11111-1111",
+  "gender": 0
+}
+###

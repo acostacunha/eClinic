@@ -1,0 +1,71 @@
+## [ eClinic - .gitignore ]
+
+# --- Compilação e Binários ---
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+
+# --- .NET & Entity Framework ---
+*.exe
+*.dll
+*.pdb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.efbundle/
+# Logs de migrações e scripts gerados
+*.migrations.sql
+
+# --- Visual Studio ---
+.vs/
+[Tt]est[Rr]esults/
+*.vspscc
+*.vssscc
+.vshost.exe
+.vshost.exe.config
+.vshost.exe.manifest
+_Chutzpah*
+*.lfm
+*.lfm.bak
+*.lfm.sh
+.localhistory/
+
+# --- Visual Studio Code ---
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# --- Configurações Sensíveis (IMPORTANTE) ---
+# Não ignore o appsettings.json padrão, mas ignore os que contêm segredos
+appsettings.Development.json
+appsettings.Local.json
+usersecrets.json
+*.pfx
+*.certificate
+*.secret
+
+# --- Pacotes NuGet ---
+*.nupkg
+# Pasta de pacotes (caso use o estilo antigo ou local)
+**/packages/*
+!**/packages/build/
+# Arquivo de cache do NuGet
+project.lock.json
+project.fragment.lock.json
+
+# --- Sistema Operacional ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Logs e Telemetria (Local) ---
+*.log
+logs/
+.opentelemetry/

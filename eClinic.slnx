@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/eClinic.Shared/">
+    <Project Path="eClinic.Shared/eClinic.Shared.csproj">
+      <BuildDependency Project="eClinic.Client.API/eClinic.Client.API.csproj" />
+    </Project>
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/eClinic.Appointment/" />
+  <Folder Name="/src/Modules/eClinic.Clients/">
+    <Project Path="eClinic.Client.API/eClinic.Client.API.csproj" />
+    <Project Path="eClinic.Client.Application/eClinic.Client.Application.csproj" />
+    <Project Path="eClinic.Client.Domain/eClinic.Client.Domain.csproj" />
+    <Project Path="eClinic.Client.Infrastructure/eClinic.Client.Infrastructure.csproj" />
+  </Folder>
+</Solution>
