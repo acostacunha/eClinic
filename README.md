@@ -10,7 +10,6 @@ O **eClinic** é um projeto de evolução de estudo focado na implementação pr
   - CQRS (com MediatR)
 - **Persistência:** Entity Framework Core
 - **Comunicação e Eventos:** RabbitMQ (Integration Events)
-- **Padronização:** ABP Framework (módulos compartilhados)
 - **Observabilidade:** Telemetria com OpenTelemetry (Metrics, Tracing, Logging)
 
 ## 🏗️ Estrutura do Projeto
