@@ -12,6 +12,9 @@ O **eClinic** é um projeto de evolução de estudo focado na implementação pr
 - **Comunicação e Eventos:** RabbitMQ (Integration Events)
 - **Observabilidade:** Telemetria com OpenTelemetry (Metrics, Tracing, Logging)
 
+## 🎯 Objetivos do Projeto
+![Diagrama de Arquitetura do eClinic](./eclinic_architecture_diagram.png)
+
 ## 🏗️ Estrutura do Projeto
 
 O projeto é dividido em camadas para garantir o desacoplamento e a testabilidade:

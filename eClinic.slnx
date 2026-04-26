@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Itens de Solução/">
+    <File Path="../../eClinic/eclinic_architecture_diagram.png" />
     <File Path=".gitignore" />
     <File Path="README.md" />
   </Folder>
