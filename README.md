@@ -47,4 +47,4 @@ Conforme o projeto evoluir, novos módulos e funcionalidades serão acrescentado
 ### Configuração
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/eClinic.git](https://github.com/seu-usuario/eClinic.git)
+   git clone [https://github.com/acostacunha/eClinic.git](https://github.com/acostacunha/eClinic.git)
