@@ -18,4 +18,10 @@
     <Project Path="eClinic.Client.Domain/eClinic.Client.Domain.csproj" />
     <Project Path="eClinic.Client.Infrastructure/eClinic.Client.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/Modules/eClinic.Clients/Tests/">
+    <Project Path="eClinic.Client.Application.Tests/eClinic.Client.Application.Tests.csproj" Id="017ff5aa-43b2-47bb-b797-598d4628a088" />
+    <Project Path="eClinic.Client.Domain.Tests/eClinic.Client.Domain.Tests.csproj" Id="becffb38-1b68-4524-b58e-29e752829093" />
+    <Project Path="eClinic.Client.Infrastrucutre.Tests/eClinic.Client.Infrastrucutre.Tests.csproj" Id="43dbae69-cedf-40ce-9298-cef8616bf745" />
+    <Project Path="eClinic.Client.API.Tests/eClinic.Client.API.Tests.csproj" Id="2765a4e0-e6f8-4ea1-a33d-2e3eb163d07c" />
+  </Folder>
 </Solution>

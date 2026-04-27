@@ -1,12 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eClinic.Client.Application.Features.Clients.GetAll;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 namespace eClinic.Client.Application.Features.Clients.GetById
 {
+    [ApiController]
+    [Route("api/client")]
     public class GetClientByIdController : Controller
     {
-        public IActionResult Index()
+        private readonly IMediator _mediator;
+        public GetClientByIdController(IMediator mediator)
         {
-            return View();
+            _mediator = mediator;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetClientById([FromQuery]GetClientQuery query)
+        {
+            var result = await _mediator.Send(query);
+
+            return result.IsSuccess ?
+            Ok(result.Value)
+            : BadRequest(new { message = result.Error });
+
         }
     }
 }

@@ -1,7 +1,5 @@
-﻿using eClinic.Client.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.Xml;
 using ClientEntity = eClinic.Client.Domain.Entities.Client;
 
 namespace eClinic.Client.Infrastructure.EntityConfig

@@ -18,7 +18,8 @@ namespace eClinic.Client.API.Features.Clients.Create
         {
                 var result = await _mediator.Send(command);
 
-                return result.IsSuccess ? Ok(new {publicId = result.Value })
+                return result.IsSuccess ?
+                Created($"/api/client/{result.Value}", new { publicId = result.Value })
                 : BadRequest( new { message = result.Error });
         }
     }
