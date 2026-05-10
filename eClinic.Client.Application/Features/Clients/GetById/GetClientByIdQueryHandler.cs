@@ -25,7 +25,7 @@ namespace eClinic.Client.Application.Features.Clients.GetById
                 Email = client.Email.Address,
                 Phone = client.Phone,
                 PublicId = client.PublicId,
-                BirthDate = client.Birtdate,
+                BirthDate = client.Birthdate,
                 Gender = client.Gender.ToString()
             });
         }

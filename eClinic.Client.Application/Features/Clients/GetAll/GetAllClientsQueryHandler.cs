@@ -27,7 +27,7 @@ namespace eClinic.Client.Application.Features.Clients.GetAll
                 Name = c.Name,
                 Phone = c.Phone,
                 Email = c.Email.Address,
-                BirthDate = c.Birtdate,
+                BirthDate = c.Birthdate,
                 Gender = c.Gender.ToString(),
             }).ToList();
 

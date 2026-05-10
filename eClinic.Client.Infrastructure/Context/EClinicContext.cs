@@ -16,7 +16,7 @@ namespace eClinic.Client.Infrastructure.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("client");
+            modelBuilder.HasDefaultSchema("eClinic");
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(EClinicContext).Assembly);
         }
 

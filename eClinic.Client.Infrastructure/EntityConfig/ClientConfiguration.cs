@@ -15,9 +15,9 @@ namespace eClinic.Client.Infrastructure.EntityConfig
             _ = builder.Property(p => p.PublicId).HasColumnName("PublicId").IsRequired(true);
             _ = builder.Property(p => p.Name).HasColumnName("Name").HasColumnType("nvarchar(200)").IsRequired(true);
             _ = builder.Property(p => p.Phone).HasColumnName("Phone").HasColumnType("nvarchar(15)").IsRequired(true);
-            _ = builder.Property(p => p.Birtdate).HasColumnName("Birtdate").HasColumnType("datetime2").IsRequired(true);
+            _ = builder.Property(p => p.Birthdate).HasColumnName("Birtdate").HasColumnType("datetime2").IsRequired(true);
             _ = builder.Property(p => p.Gender).HasColumnName("Gender").HasConversion<string>().IsRequired(true);
-            _ = builder.Property(p => p.Birtdate).HasColumnName("Birtdate").HasColumnType("datetime2").IsRequired(true);
+            _ = builder.Property(p => p.Birthdate).HasColumnName("Birtdate").HasColumnType("datetime2").IsRequired(true);
             _ = builder.OwnsOne(p => p.Cpf, cpf =>
             {
                 cpf.Property(p => p.CpfNumber).HasColumnName("Cpf").HasColumnType("nvarchar(11)").IsRequired(true);
