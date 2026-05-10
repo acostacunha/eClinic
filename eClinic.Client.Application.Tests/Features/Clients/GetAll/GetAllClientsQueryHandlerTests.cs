@@ -1,7 +1,6 @@
 ﻿using eClinic.Client.Application.Features.Clients.GetAll;
 using eClinic.Client.Domain.Interfaces.Repositories;
 using NSubstitute;
-using System.Reflection.Metadata;
 using Xunit;
 
 namespace eClinic.Client.Application.Tests.Features.Clients.GetAll

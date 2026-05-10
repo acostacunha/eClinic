@@ -30,12 +30,12 @@ namespace eClinic.Client.Infrastrucutre.Tests.Repositories
                             cpf : cpf,
                             email : email,
                             phone : "11999999999",
-                            birtdate : new DateTime(1990, 1, 1),
+                            birthdate: new DateTime(1990, 1, 1),
                             GenderType.Male
                             );
-
-            // Act
-            await repository.AddAsync(cliente);
+        
+        // Act
+        await repository.AddAsync(cliente);
 
             // Assert
             var clienteNoBanco = await context.Set<ClientEntity>().FirstOrDefaultAsync();
@@ -59,7 +59,7 @@ namespace eClinic.Client.Infrastrucutre.Tests.Repositories
                 cpf: cpf,
                 email: email,
                 phone: "11999999999",
-                birtdate: new DateTime(1990, 1, 1),
+                birthdate: new DateTime(1990, 1, 1),
                 GenderType.Male
                 );
 
